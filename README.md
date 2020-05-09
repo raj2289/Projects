@@ -1,5 +1,5 @@
-# Diary_Writting
-Diary Writting is for the writting diary on the online platform.
+# Toollist
+Toolist is for making list for remebering things for manage your work.
 ## Prerequisites
 install NOde_module in it-
 $ npm init
