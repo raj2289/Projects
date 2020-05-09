@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>toollist</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="f">
+    <div class="heading">
+    <h1><%= Newday %> </h1>
+  </div>
+
+
+  <div class="box">
+
+    <% for( var i=0;i<NewItems.length && NewItems;i++)
+    { %>
+      <form action="/delete" method="post">
+      <div class="item">
+<input type ="checkbox" name="delitem" value="<%=NewItems[i]._id%>" onChange="this.form.submit()">
+<p><%= NewItems[i].name %></p>
+<input type ="hidden" name ="Newday" value="<%=Newday%>">
+</div>
+</form>    <% } %>
+
+
+ <form class="s" action="/" method="post">
+  <input type="text" name="NewItem" class="i" placeholder="NEW ITEM">
+  <button type="submit" name="button" value="<%= Newday %>">+</button>
+</div>
+ </form>
+</div>
+
+  </body>
+</html>
